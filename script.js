@@ -27,7 +27,7 @@ setPos(50);
 // Movimento automático da linha
 const AMPLITUDE = 40;      // a linha vai de 10% a 90%
 const VELOCIDADE = 0.0012; // maior = mais rápido
-const PAUSA_MS = 3000;     // tempo parado após o toque antes de voltar a mexer
+const PAUSA_MS = 1000;     // tempo parado após o toque antes de voltar a mexer
 const reduzMovimento = matchMedia("(prefers-reduced-motion: reduce)").matches;
 let fase = 0, ultimo = 0, retomaEm = 0, visivel = true;
 
