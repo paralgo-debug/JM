@@ -26,8 +26,8 @@ range.addEventListener("input", () => setPos(range.value));
 setPos(50);
 
 function mostrar(n) {
-  imgAntes.src = `img/antes-${n}.jpg`;
-  imgDepois.src = `img/depois-${n}.jpg`;
+  imgAntes.src = `antes-${n}.jpg`;
+  imgDepois.src = `depois-${n}.jpg`;
   range.value = 50;
   setPos(50);
   thumbs.querySelectorAll("button").forEach((b, i) =>
@@ -39,7 +39,7 @@ for (let n = 1; n <= TOTAL_PARES; n++) {
   const b = document.createElement("button");
   b.type = "button";
   b.setAttribute("aria-label", `Ver exemplo ${n}`);
-  b.innerHTML = `<img src="img/depois-${n}.jpg" alt="" loading="lazy">`;
+  b.innerHTML = `<img src="depois-${n}.jpg" alt="" loading="lazy">`;
   b.addEventListener("click", () => mostrar(n));
   thumbs.appendChild(b);
 }
